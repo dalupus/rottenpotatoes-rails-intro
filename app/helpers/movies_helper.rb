@@ -5,7 +5,7 @@ module MoviesHelper
   end
 
   def header_class(field)
-    if(params[:sort].to_s == field)
+    if(session[:sort].to_s == field)
       return 'hilite'
     else
       return ''
